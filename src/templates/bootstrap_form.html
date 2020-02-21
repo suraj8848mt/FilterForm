@@ -157,14 +157,19 @@
                 {% for journal in queryset %}
                 <li>
                     {{ journal.title }}
+                    <br>
                     <span>Author: {{ journal.author.name }}</span>
                     <span>
+                        <br>
                     {% for cat in journal.categories.all %}
                       {{ cat }}
                     {% endfor %}
                   </span>
+                    <br>
                     <span>Publish date: {{ journal.publish_date }}</span>
+                    <br>
                     <span>View count: {{ journal.views }}</span>
+                    <br>
                     <span>Reviewed: {{ journal.reviewed }}</span>
                 </li>
                 <hr /> {% endfor %}
