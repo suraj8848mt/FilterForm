@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Journal, Author, Category
 
-# Register your models here.
+admin.site.register(Author)
+admin.site.register(Journal)
+admin.site.register(Category)
